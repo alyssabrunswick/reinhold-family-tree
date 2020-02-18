@@ -1,8 +1,12 @@
 <template>
   <Layout>
-    <h1>Reinhold Family</h1>
+    <h1 class="font-display">Reinhold Family</h1>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image src="~/assets/images/1943-08-29.jpg" width="1500" style="width: 100%" />
+    <g-image
+      src="~/assets/images/1943-08-29.jpg"
+      width="1500"
+      style="width: 100%"
+    />
   </Layout>
 </template>
 
@@ -13,10 +17,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-main {
-  display: flex;
-  flex-direction: column;
-}
-</style>
