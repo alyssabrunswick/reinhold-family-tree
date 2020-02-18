@@ -1,7 +1,7 @@
 export default {
   "trailingSlash": true,
   "pathPrefix": "",
-  "titleTemplate": "%s - Gridsome",
+  "titleTemplate": "%s - Reinhold Family",
   "siteUrl": "",
   "version": "0.7.12"
 }

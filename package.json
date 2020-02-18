@@ -9,5 +9,9 @@
   "dependencies": {
     "@gridsome/source-contentful": "^0.5.2",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
   }
 }
