@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      display: ["Calistoga", "sans-serif"],
+      display: ["Calistoga", "serif"],
       body: ["Roboto", "sans-serif"]
     },
     extend: {}
