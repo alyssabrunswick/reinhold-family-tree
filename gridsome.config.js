@@ -31,4 +31,12 @@ module.exports = {
       }
     }
   }
+  // templates: {
+  //   ContentfulPerson: [
+  //     {
+  //       path: node => `/profile/${node.firstName}-${node.lastName}`,
+  //       component: "./src/templates/Profile.vue"
+  //     }
+  //   ]
+  // }
 };
