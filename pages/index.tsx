@@ -3,8 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import homepageImage from '../static/images/reinhold-family-reunion.jpg'
+import { fetchPersons } from '../util/contentfulPosts'
+import { Person } from '../components'
+import { Contentful_Person } from '../types'
 
-const Home: NextPage = () => {
+const Home = ({ people }: { people: Contentful_Person[] }) => {
+  console.log(people)
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +23,7 @@ const Home: NextPage = () => {
         </h1>
         <Image src={homepageImage} alt='Reinhold family reunion picture' />
         <div className={styles.grid}>
-
+          {people.map((p: Contentful_Person) => <Person key={p.id} {...p} />)}
         </div>
       </main>
 
@@ -31,3 +35,14 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export async function getStaticProps() {
+  const res = await fetchPersons()
+  const people = await res?.map((p) => ({ id: p.sys.id, ...p.fields }))
+
+  return {
+    props: {
+      people,
+    },
+  }
+}
