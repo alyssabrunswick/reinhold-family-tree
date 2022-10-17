@@ -4,6 +4,7 @@ import homepageImage from '../static/images/reinhold-family-reunion.jpg'
 import { fetchPersons } from '../util/contentfulPosts'
 import { Person } from '../components'
 import { Contentful_Person } from '../types'
+import Link from 'next/link'
 
 const Home = ({ people }: { people: Contentful_Person[] }) => {
 
@@ -14,7 +15,7 @@ const Home = ({ people }: { people: Contentful_Person[] }) => {
       </h1>
       <Image src={homepageImage} alt='Reinhold family reunion picture' />
 
-      <h2><a href='/2023'>85th Annual Reunion</a></h2>
+      <h2><Link href='/2023'>85th Annual Reunion</Link></h2>
       <div className={styles.grid}>
         {people.map((p: Contentful_Person) => <Person key={p.id} {...p} />)}
       </div>
