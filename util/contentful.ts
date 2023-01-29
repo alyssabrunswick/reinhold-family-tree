@@ -11,5 +11,14 @@ export async function fetchPersons() {
     content_type: 'person'
   })
   if (entries.items) return entries.items
-  console.log(`Error getting Entries for ${contentType.name}.`)
+  // console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+export async function fetchPerson({ slug }: { slug: string }) {
+  const entries = await client.getEntries({
+    content_type: 'person',
+    'fields.firstName': slug
+  })
+  if (entries.items) return entries.items
+  // console.log(`Error getting Entries for ${contentType.name}.`)
 }
