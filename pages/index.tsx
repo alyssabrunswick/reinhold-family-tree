@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import homepageImage from '../static/images/reinhold-family-reunion.jpg'
+import homepageImage from '../public/images/reinhold-family-reunion.jpg'
 import { fetchPersons } from '../util/contentful'
 import { Person } from '../components'
 import { Contentful_Person } from '../types'
