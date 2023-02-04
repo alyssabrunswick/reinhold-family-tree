@@ -3,15 +3,6 @@
   "description": "Family tree of Frank & Emma Reinhold",
   "version": "2.0.0",
   "author": "Alyssa Brunswick",
-  "dependencies": {
-    "contentful": "10.0.0-beta-v10.8",
-    "eslint-config-next": "^13.1.6",
-    "next": "^13.1.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "uuid": "^9.0.0"
-  },
   "keywords": [
     "family"
   ],
@@ -25,11 +16,20 @@
     "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "contentful": "10.0.0-beta-v10.10",
+    "eslint-config-next": "^13.1.6",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "uuid": "^9.0.0"
+  },
   "devDependencies": {
-    "@types/node": "18.11.0",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.25.0",
-    "typescript": "4.8.4"
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "eslint": "8.33.0",
+    "typescript": "4.9.4"
   }
 }

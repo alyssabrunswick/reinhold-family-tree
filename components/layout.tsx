@@ -8,11 +8,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Reinhold family</title>
-        <meta name="description" content="Reinhold family" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <Navigation />
 
