@@ -1,13 +1,12 @@
-import { mitr } from '@/util'
 import styles from '../page.module.css'
 
 export default function Page() {
   return <main className={styles.main}>
-    <h1 className={mitr.className}>
+    <h1>
       85th Annual Reinhold Family Reunion
     </h1>
 
-    <div className={mitr.className}>
+    <div>
       <p>Our 85th Reunion will be held on</p>
       <h3>June 11, 2023</h3>
       <p>at</p>

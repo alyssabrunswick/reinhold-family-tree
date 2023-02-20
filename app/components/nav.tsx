@@ -1,10 +1,8 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-const styles = {
-  nav: '',
-  activeNav: ''
-}
+import styles from '@/app/components/components.module.css'
+
 type NavigationProps = {}
 
 const pages = [

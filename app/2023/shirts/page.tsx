@@ -1,8 +1,6 @@
-import { mitr } from '@/util'
-
 export default function Shirts() {
   return <main>
-    <h1 className={mitr.className}>
+    <h1>
       Shirts
     </h1>
   </main>

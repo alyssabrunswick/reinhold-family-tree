@@ -1,8 +1,7 @@
 
 type FooterProps = {}
-const styles = {
-  footer: ''
-}
+import styles from '@/app/components/components.module.css'
+
 export const Footer = (props: FooterProps) => {
   const yearTxt = (new Date().getFullYear())
   return (

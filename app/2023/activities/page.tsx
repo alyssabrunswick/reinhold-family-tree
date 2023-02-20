@@ -1,8 +1,6 @@
-import { mitr } from '@/util'
-
 export default function Activities() {
   return <main>
-    <h1 className={mitr.className}>
+    <h1>
       Activities
     </h1>
   </main>
