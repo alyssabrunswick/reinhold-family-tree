@@ -1,5 +1,6 @@
+'use client'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import styles from '../styles/Home.module.css'
 
 type NavigationProps = {}
@@ -11,19 +12,47 @@ const pages = [
   },
   {
     title: '2023 Reunion',
-    path: '/2023'
-  }
+    path: '/2023',
+    childLinks: [
+      {
+        title: 'Activities',
+        path: '/2023/activities'
+      },
+      {
+        title: 'Lodging',
+        path: '/2023/lodging'
+      },
+      {
+        title: 'Shirts',
+        path: '/2023/shirts'
+      }
+    ]
+  },
 ]
 
 export const Navigation = (props: NavigationProps) => {
-  const router = useRouter();
+  const pathname = usePathname();
+
   return (
     <nav className={styles.nav}>
       <ul>
-        {pages.map(({ title, path }) => {
+        {pages.map(({ title, path, childLinks }) => {
           return (
-            <li key={path} className={path === router.route ? styles.activeNav : ''}>
+            <li key={path} className={path === pathname ? styles.activeNav : ''}>
               <Link href={path}>{title}</Link>
+
+
+              {childLinks ? <ul>
+                {childLinks.map(({ title, path }) => {
+                  return (
+                    <li key={path} className={path === pathname ? styles.activeNav : ''}>
+                      <Link href={path}>{title}</Link>
+                    </li>
+                  )
+                })}
+              </ul> : null}
+
+
             </li>
           )
         })}
