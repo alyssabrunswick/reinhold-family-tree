@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Footer, Person } from '../components'
+const styles = {
+  container: '',
+  main: ''
+}
+import { Footer } from '.'
 import React from 'react'
 import { Navigation } from './nav'
 
