@@ -28,6 +28,11 @@
   color: var(--secondary);
 }
 
+.defaultNav a,
+.defaultNav:visited a {
+  color: var(--dark);
+}
+
 .footer {
   display: flex;
   flex: 1;

@@ -8,9 +8,9 @@ export default function Page() {
 
     <div>
       <p>Our 85th Reunion will be held on</p>
-      <h3>June 11, 2023</h3>
+      <h3>June 10-11, 2023</h3>
       <p>at</p>
-      <h4>at <a href='https://goo.gl/maps/Wfnnbhm27J2SjGcA7' target="_blank" rel="noreferrer">Ta-Ha-Zouka Park in Norfolk, Nebraska</a></h4>
+      <h4>at <a href='https://goo.gl/maps/Wfnnbhm27J2SjGcA7' target="_blank" rel="noreferrer">in Norfolk, Nebraska</a></h4>
       <p>We hope you can make it!</p>
     </div>
   </main>

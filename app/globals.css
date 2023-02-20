@@ -5,6 +5,24 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  --darkest: #0B121A;
+  --dark: #3A2F32;
+  --light: #e8e8dc;
+  --lightest: #EBD4C5;
+
+  --primary-lighter: #977F64;
+  --primary: #5A5D37;
+  --primary-darker: #345242;
+
+  --secondary-lightest: var(--light);
+  --secondary-lighter: #CE8B77;
+  --secondary: #B56D51;
+  --secondary-darker: #E36B53;
+
+  --tertiary-lighter: var(--lightest);
+  --tertiary: #CC9B61;
+  --tertiary-darker: #AC8740;
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
