@@ -10,7 +10,6 @@
   "main": "n/a",
   "scripts": {
     "dev": "next dev",
-    "export": "next export",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
