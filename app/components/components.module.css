@@ -50,6 +50,7 @@
   padding: 1rem;
   margin: 3rem 0;
   background-color: var(--foreground-rgb);
+  color: var(--background-rgb);
   border-radius: 5px;
 }
 

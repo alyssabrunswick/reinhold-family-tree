@@ -25,12 +25,14 @@
 
   --foreground-rgb: var(--primary-darker);
   --background-rgb: var(--light);
+  --secondary-rgb: var(--dark)
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: var(--light);
     --background-rgb: var(--darkest);
+    --secondary-rgb: var(--secondary-lighter)
   }
 }
 

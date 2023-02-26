@@ -1,4 +1,5 @@
 import styles from '../../page.module.css'
+import componentStyles from '../../components/components.module.css'
 import { Activity, saturday, saturdayEvening, sunday } from './activity-descriptions'
 
 function Content({ name, description, time, location, isMain }: Activity) {
@@ -24,7 +25,7 @@ export default function Activities() {
       <div className={styles.grid2}>
         {saturday.map((activity) => <Content {...activity} key={activity.name} />)}
       </div>
-      <div className={styles.panel}>
+      <div className={componentStyles.panel}>
         <p>{`For the group activities, we'd like to know who wants to join so we can coordinate best. 
             Please sign up at `} <a href={signupURL} target="_blank" rel="noreferrer">{signupURL}</a>.</p>
       </div>
