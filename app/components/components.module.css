@@ -1,6 +1,6 @@
 .nav {
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--foreground-rgb);
+  color: var(--background-rgb);
   display: flex;
   flex: 1;
   padding: .5rem 0;
@@ -24,13 +24,10 @@
 }
 
 .activeNav a,
-.activeNav:visited a {
-  color: var(--secondary);
-}
-
+.activeNav:visited,
 .defaultNav a,
 .defaultNav:visited a {
-  color: var(--dark);
+  color: var(--background-rgb);
 }
 
 .footer {
@@ -48,6 +45,45 @@
   align-items: center;
   flex-grow: 1;
 }
+
+.panel {
+  padding: 1rem;
+  margin: 3rem 0;
+  background-color: var(--foreground-rgb);
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.form ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form ul label {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  margin: .5rem;
+}
+
+.form input {
+  height: 3rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form button {
+  padding: .5rem;
+  flex: 1;
+  margin-top: 1rem;
+}
+
 
 @media (prefers-color-scheme: dark) {
 
