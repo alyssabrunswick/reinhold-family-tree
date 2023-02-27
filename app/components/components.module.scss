@@ -1,39 +1,4 @@
-.nav {
-  background-color: var(--foreground-rgb);
-  color: var(--background-rgb);
-  display: flex;
-  flex: 1;
-  padding: .5rem 0;
-  justify-content: center;
-}
-
-.nav ul {
-  display: flex;
-  flex: 1;
-  list-style-type: none;
-}
-
-.nav ul li {
-  padding: 0 1rem;
-}
-
-.nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.25rem
-}
-
-.defaultNav a,
-.defaultNav:visited a,
-.activeNav .defaultNav a,
-.activeNav .defaultNav a:visited {
-  color: var(--primary);
-}
-
-.activeNav a,
-.activeNav:visited {
-  color: var(--secondary);
-}
+@import "./styles/nav.module.scss";
 
 .footer {
   display: flex;
@@ -89,7 +54,6 @@
   flex: 1;
   margin-top: 1rem;
 }
-
 
 @media (prefers-color-scheme: dark) {
 

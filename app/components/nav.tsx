@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import styles from '@/app/components/components.module.css'
+import styles from '@/app/components/components.module.scss'
 
 type NavigationProps = {}
 
@@ -34,13 +34,13 @@ export const Navigation = (props: NavigationProps) => {
   const pathname = usePathname();
 
   return (
-    <nav className={styles.nav}>
+    <nav aria-label="main navigation" className={styles.nav}>
       <ul>
         {pages.map(({ title, path, childLinks }) => {
           return (
-            <li key={path} className={path === pathname ? styles.activeNav : styles.defaultNav } >
-              <Link href={path}>{title}</Link>
-              {childLinks ? <ul>
+            <li key={path} className={childLinks ? styles.dropdown : undefined}>
+              <Link href={path} aria-controls='2023-dropdown' className={`${styles[`dropdown__title`]} ${path === pathname ? styles.activeNav : styles.defaultNav}`}>{title}</Link>
+              {childLinks ? <ul className={styles[`dropdown__menu`]} id='2023-dropdown'>
                 {childLinks.map(({ title, path }) => {
                   return (
                     <li key={path} className={path === pathname ? styles.activeNav :  styles.defaultNav }>

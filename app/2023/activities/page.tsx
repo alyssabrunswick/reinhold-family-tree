@@ -1,5 +1,5 @@
 import styles from '../../page.module.css'
-import componentStyles from '../../components/components.module.css'
+import componentStyles from '../../components/components.module.scss'
 import { Activity, saturday, saturdayEvening, sunday } from './activity-descriptions'
 
 function Content({ name, description, time, location, isMain }: Activity) {

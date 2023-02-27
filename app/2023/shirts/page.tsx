@@ -1,5 +1,5 @@
 import styles from '../../page.module.css'
-import componentStyles from '../../components/components.module.css'
+import componentStyles from '../../components/components.module.scss'
 
 export default function Shirts() {
 

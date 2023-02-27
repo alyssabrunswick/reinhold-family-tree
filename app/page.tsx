@@ -8,7 +8,12 @@ export default function Home() {
       <h1>
         Reinhold Family
       </h1>
-      <Image src={homepageImage} alt='Reinhold family reunion picture' />
+
+      <h3>est. 1938</h3>
+
+      <div className={styles.center}>
+        <Image src={homepageImage} alt='Reinhold family reunion picture' height='800' width='800' style={{ height: 'auto', maxWidth: '70vw'}} />
+      </div>
     </main>
   )
 }
