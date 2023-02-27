@@ -10,7 +10,7 @@ function Content({ name, description, time, location, isMain }: Activity) {
         <h2>{name} <span> | {time}</span></h2>
         : <h3>{name}<span> | {time}</span></h3>}
         <h4>{location}</h4>
-      <p>{description}</p>
+      <div>{description}</div>
     </div>
   )
 }

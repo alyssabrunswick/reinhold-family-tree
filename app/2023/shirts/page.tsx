@@ -32,7 +32,7 @@ export default function Shirts() {
     <p>{`This year we'll be ordering tshirts again if you're insterested!`}</p>
     <p>{`The deadline to order is`} <b>TBD</b></p>
 
-    <section>
+    <section className={styles.section}>
       <h3>Order</h3>
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className={componentStyles.form}>
         <p className="hidden" hidden>
@@ -53,8 +53,8 @@ export default function Shirts() {
       </form>
     </section>
 
-    <section>
-      <h4>Payment</h4>
+    <section className={styles.section}>
+      <h3>Payment</h3>
       <p>Alyssa will collect payment for the shirts to be ordered.</p>
       <div>
         <p>Paypal</p>

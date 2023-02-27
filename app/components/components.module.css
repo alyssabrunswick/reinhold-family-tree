@@ -23,11 +23,16 @@
   font-size: 1.25rem
 }
 
-.activeNav a,
-.activeNav:visited,
 .defaultNav a,
-.defaultNav:visited a {
-  color: var(--background-rgb);
+.defaultNav:visited a,
+.activeNav .defaultNav a,
+.activeNav .defaultNav a:visited {
+  color: var(--primary);
+}
+
+.activeNav a,
+.activeNav:visited {
+  color: var(--secondary);
 }
 
 .footer {

@@ -38,11 +38,10 @@ export const Navigation = (props: NavigationProps) => {
       <ul>
         {pages.map(({ title, path, childLinks }) => {
           return (
-            <li key={path} className={path === pathname ? styles.activeNav : '' } >
+            <li key={path} className={path === pathname ? styles.activeNav : styles.defaultNav } >
               <Link href={path}>{title}</Link>
               {childLinks ? <ul>
                 {childLinks.map(({ title, path }) => {
-                  console.log(path === pathname)
                   return (
                     <li key={path} className={path === pathname ? styles.activeNav :  styles.defaultNav }>
                       <Link href={path}>{title}</Link>
