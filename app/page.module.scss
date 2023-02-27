@@ -41,6 +41,60 @@
   &.narrow {
     max-width: clamp(300px, 50vw, 600px);
   }
+
+  &.horizontal {
+    flex-direction: row;
+
+    * {
+      flex: 1;
+    }
+  }
+}
+
+.card {
+  background-color: var(--tertiary);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+
+  p {
+    color: var(--dark)
+  }
+
+  &:hover {
+    background-color: var(--primary);
+
+    p {
+      color: var(--light)
+    }
+  }
+}
+
+.reunion-banner {
+  padding: .5rem;
+  background-color: var(--tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+
+  h3 {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .reunion-banner {
+    position: absolute;
+    padding: 1rem;
+    bottom: 5vw;
+    right: -30%;
+    transform: rotate(-25deg);
+    width: 100%;
+  }
 }
 
 /* Mobile and Tablet */
@@ -64,6 +118,15 @@
 
   .section h2 {
     align-self: center;
+  }
+
+  .reunion-banner {
+    position: relative;
+    bottom: revert;
+    right: revert; 
+    transform: rotate(0);
+    width: 110vw;
+    padding: 1rem 3rem;
   }
 }
 

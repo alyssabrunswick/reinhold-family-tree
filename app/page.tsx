@@ -5,6 +5,12 @@ import homepageImage from '../public/images/reinhold-family-reunion.jpg'
 export default function Home() {
   return (
     <main className={styles.main}>
+      <a href={'/2023'} className={styles['reunion-banner']}>
+        <h3>85th Annual Reinhold Reunion</h3>
+        <h4>June 10-11, 2023</h4>
+        <p>Click here for more details!</p>
+      </a>
+
       <h1>
         Reinhold Family
       </h1>

@@ -51,7 +51,7 @@ export default function Shirts() {
             <li key={value}><label>{label}<input type="number" name={value} id={value} max={10} /></label></li>
           ))}
         </ul>
-        <button type="submit" disabled>Submit</button>
+        <button type="submit">Submit</button>
       </form>
       </div>
 
