@@ -1,4 +1,4 @@
-import styles from '../../page.module.css'
+import styles from '../../page.module.scss'
 import { camping, hotels, type Location } from './lodging-data'
 
 function Address ({ name,  address,  googleMapsLink,  phone,  website }: Location) {

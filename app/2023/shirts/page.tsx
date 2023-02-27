@@ -1,4 +1,4 @@
-import styles from '../../page.module.css'
+import styles from '../../page.module.scss'
 import componentStyles from '../../components/components.module.scss'
 
 export default function Shirts() {
@@ -34,7 +34,9 @@ export default function Shirts() {
 
     <section className={styles.section}>
       <h3>Order</h3>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className={componentStyles.form}>
+      <div className={componentStyles.panel}>
+
+      <form name="2023shirts" method="POST" data-netlify="true" netlify-honeypot="bot-field" className={componentStyles.form}>
         <p className="hidden" hidden>
           <label>
             {`Do not fill this out if you are human:`} <input name="bot-field" />
@@ -51,15 +53,17 @@ export default function Shirts() {
         </ul>
         <button type="submit" disabled>Submit</button>
       </form>
+      </div>
+
     </section>
 
-    <section className={styles.section}>
+    <section className={`${styles.section} + ${styles.narrow}`}>
       <h3>Payment</h3>
-      <p>Alyssa will collect payment for the shirts to be ordered.</p>
-      <div>
-        <p>Paypal</p>
-        <p>Venmo</p>
-      </div>
+      <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Feel free to pay Alyssa via Paypal or Venmo, or contact one of us if you'd prefer another way!`}</p>
+      <ul style={{ padding: '0 5rem'}}>
+        <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
+        <li>Venmo | @alyssabrunswick</li>
+      </ul>
     </section>
   </main>
 }
