@@ -36,23 +36,25 @@ export default function Shirts() {
       <h3>Order</h3>
       <div className={componentStyles.panel}>
 
-      <form name="shirts" method="POST" data-netlify="true" netlify-honeypot="bot-field" className={componentStyles.form}>
-        <p className="hidden" hidden>
+        <form name="shirts" method="POST" data-netlify="true"
+          action="/success"
+          className={componentStyles.form}>
+          {/* <p className="hidden" hidden>
           <label>
             {`Do not fill this out if you are human:`} <input name="bot-field" />
           </label>
-        </p>
-        <p>
-          <label>Your Name: <input type="text" name="name" required /></label>
-        </p>
-        <p>{`Please enter the quantity you'd like for each size`}</p>
-        <ul>
-          {sizes?.map(({ label, value }) => (
-            <li key={value}><label>{label}<input type="number" name={value} id={value} max={10} /></label></li>
-          ))}
-        </ul>
-        <button type="submit">Submit</button>
-      </form>
+        </p> */}
+          <p>
+            <label>Your Name: <input type="text" name="name" required /></label>
+          </p>
+          <p>{`Please enter the quantity you'd like for each size`}</p>
+          <ul>
+            {sizes?.map(({ label, value }) => (
+              <li key={value}><label>{label}<input type="number" name={value} id={value} max={10} /></label></li>
+            ))}
+          </ul>
+          <button type="submit" style={{ cursor: 'pointer' }}>Submit</button>
+        </form>
       </div>
 
     </section>
@@ -60,7 +62,7 @@ export default function Shirts() {
     <section className={`${styles.section} + ${styles.narrow}`}>
       <h3>Payment</h3>
       <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Feel free to pay Alyssa via Paypal or Venmo, or contact one of us if you'd prefer another way!`}</p>
-      <ul style={{ padding: '0 5rem'}}>
+      <ul style={{ padding: '0 5rem' }}>
         <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
         <li>Venmo | @alyssabrunswick</li>
       </ul>
