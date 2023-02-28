@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 63px);
 }
 
 .grid3 {
@@ -71,29 +71,49 @@
 }
 
 .reunion-banner {
-  padding: .5rem;
-  background-color: var(--tertiary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-
-  h3 {
-    flex: 1;
-    text-align: center;
-  }
-}
-
-@media (min-width: 600px) {
-
-  .reunion-banner {
+  &-wrapper {
+    top: 0;
+    right: 0;
+    overflow: hidden; 
+    height: 450px;
+    width: 70vw;
     position: absolute;
-    padding: 1rem;
-    bottom: 5vw;
-    right: -30%;
-    transform: rotate(-25deg);
-    width: 100%;
+  }
+
+  &-content {
+    margin: 0;
+    padding: 0;
+    background: var(--tertiary);
+    color:white;
+    padding:1em 0;
+    position: absolute;
+    top:0;
+    right:0;
+    transform: translateX(-30%) translateY(0%) rotate(25deg);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top:0;
+      margin: 0 -1px;
+      width: 100%;
+      height: 100%;
+      background: var(--tertiary);
+    }
+
+    &:before {
+      right: 100%;
+    }
+
+    &:after {
+      left: 100%;
+    }
   }
 }
 
@@ -121,21 +141,27 @@
   }
 
   .reunion-banner {
-    position: relative;
-    bottom: revert;
-    right: revert; 
-    transform: rotate(0);
-    width: 110vw;
-    padding: 1rem 3rem;
-  }
-}
+    &-wrapper {
+      background: var(--tertiary);
+      position: relative;
+      height: auto;
+      width: 100vw;
+      top: initial;
+      right: initial;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+      padding: 1rem 2rem;
+    }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
+    &-content {
+      position: relative;
+      transform: translateX(0%) translateY(0%) rotate(0deg);
 
-  to {
-    transform: rotate(0deg);
+      h3 {
+        text-align: center;
+        line-height: 1;
+      }
+    }
   }
 }
