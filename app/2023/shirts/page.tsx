@@ -36,14 +36,17 @@ export default function Shirts() {
       <h3>Order</h3>
       <div className={componentStyles.panel}>
 
-        <form name="shirts" method="POST" data-netlify="true"
+        <form name="shirts" method="POST" 
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           action="/success"
           className={componentStyles.form}>
-          {/* <p className="hidden" hidden>
-          <label>
-            {`Do not fill this out if you are human:`} <input name="bot-field" />
-          </label>
-        </p> */}
+          <input type="hidden" name="form-name" value="shirts" />
+          <p className="hidden" hidden>
+            <label>
+              {`Do not fill this out if you are human:`} <input name="bot-field" />
+            </label>
+          </p>
           <p>
             <label>Your Name: <input type="text" name="name" required /></label>
           </p>
