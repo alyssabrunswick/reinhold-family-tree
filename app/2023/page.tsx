@@ -16,7 +16,7 @@ export default function Page() {
       <h4>in <a href='https://goo.gl/maps/Wfnnbhm27J2SjGcA7' target="_blank" rel="noreferrer">Norfolk, Nebraska</a></h4>
       <p>We hope you can make it!</p>
 
-      <div className={`${styles.section} ${styles.horizontal} ${styles.grid3}`}>
+      <div className={`${styles.section} ${styles.grid3}`}>
         <a href={'/2023/activities'} className={styles.card}>
           <h3>Activities</h3>
           <p>We have a handful of activities planned! Please join the ones you can!</p>

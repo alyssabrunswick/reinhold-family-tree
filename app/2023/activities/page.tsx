@@ -39,9 +39,11 @@ export default function Activities() {
 
     <section className={styles.section}>
       <h2>Sign up</h2>
-      <div className={componentStyles.panel}>
-
-      <iframe src='https://docs.google.com/forms/d/e/1FAIpQLScXfiFtelSw5MPp4XBAEGX-VOZ3Hl3vfD1xzWVnYcYE66KruA/viewform?embedded=true' width='800' height='990'>Loading…</iframe>
+    
+      <a href='https://forms.gle/aEWKuT2pWy6UcuRx7' target='_blank' rel='noreferrer'>Google Form Sign Up Sheet</a>
+      
+      <div className={`${componentStyles.panel} ${styles.hideOnSmall}`}>
+        <iframe  src='https://docs.google.com/forms/d/e/1FAIpQLScXfiFtelSw5MPp4XBAEGX-VOZ3Hl3vfD1xzWVnYcYE66KruA/viewform?embedded=true' width='800' height='990'>Loading…</iframe>
       </div>
     </section>
   </main>
