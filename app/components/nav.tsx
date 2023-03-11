@@ -24,7 +24,7 @@ const pages = [
       },
       {
         title: 'Shirts',
-        path: '/2023/shirts'
+        path: '/2023/shirt'
       }
     ]
   },

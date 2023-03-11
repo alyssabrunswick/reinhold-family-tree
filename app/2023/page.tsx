@@ -25,7 +25,7 @@ export default function Page() {
           <h3>Lodging</h3>
           <p>Hotel and camping recommendations.</p>
         </a>
-        <a href={'/2023/shirts'} className={styles.card}>
+        <a href={'/2023/shirt'} className={styles.card}>
           <h3>Shirts</h3>
           <p>Get your order in!</p>
         </a>
