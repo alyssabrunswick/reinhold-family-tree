@@ -75,12 +75,24 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: initial;
+a {
+  color: var(--primary-darker);
+
+  .card & {
+    color: var(--secondary-darker);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+
+  a {
+    color: var(--secondary-darker);
+
+    .card & {
+      color: var(--primary-darker);
+    }
   }
 }

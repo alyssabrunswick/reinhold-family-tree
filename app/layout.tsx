@@ -1,6 +1,7 @@
-import './globals.css'
+import './globals.scss'
 import { Navigation } from '@/app/components/nav'
 import { mitr } from '@/util'
+import { Footer } from './components'
 export default function RootLayout({
   children,
 }: {
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   )

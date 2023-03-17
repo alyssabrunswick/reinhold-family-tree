@@ -1,8 +1,9 @@
 import styles from '../../page.module.scss'
 import componentStyles from '../../components/components.module.scss'
 import { Activity, saturday, saturdayEvening, sunday } from './activity-descriptions'
+import Link from 'next/link'
 
-function Content({ name, description, time, location, isMain }: Activity) {
+function Content({ name, description, time, location, isMain, facebookEventLink }: Activity) {
   
   return (
     <div key={name}>
@@ -11,6 +12,7 @@ function Content({ name, description, time, location, isMain }: Activity) {
         : <h3>{name}<span> | {time}</span></h3>}
         <h4>{location}</h4>
       <div>{description}</div>
+      {facebookEventLink ? <p>Stay up to date with the <Link href={facebookEventLink}>facebook event page</Link>.</p> : null}
     </div>
   )
 }

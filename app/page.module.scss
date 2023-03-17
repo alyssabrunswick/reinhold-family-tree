@@ -51,8 +51,6 @@
   flex-direction: column;
 }
 
-
-
 .card {
   background-color: var(--tertiary);
   padding: 1rem;
@@ -60,14 +58,24 @@
   margin: 1rem;
 
   p {
-    color: var(--dark)
+    color: var(--dark);
+  }
+
+  color: var(--primary-darker);
+  &:visited {
+    color: var(--primary-darker);
   }
 
   &:hover {
     background-color: var(--primary);
 
     p {
-      color: var(--light)
+      color: var(--light);
+    }
+
+    color: var(--secondary-darker);
+    &:visited {
+      color: var(--secondary-darker);
     }
   }
 }
