@@ -9,7 +9,7 @@ export default function ContactPage() {
     <section className={styles.section}>
       <h2>Facebook Group</h2>
       <div className={componentStyles.panel}>
-        <p>Message us or post on the <a href='http://'>Reinhold Family reunioni Facebook group</a></p>
+        <p>Message us or post on the <a href='https://www.facebook.com/groups/ReinholdFamilyReunion'>Reinhold Family reunion Facebook group</a></p>
       </div>
     </section>
 
