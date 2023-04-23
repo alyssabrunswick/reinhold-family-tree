@@ -12,7 +12,7 @@ function Content({ name, description, time, location, isMain, facebookEventLink 
         : <h3>{name}<span> | {time}</span></h3>}
         <h4>{location}</h4>
       <div>{description}</div>
-      {facebookEventLink ? <p>Stay up to date with the <Link href={facebookEventLink}>facebook event page</Link>.</p> : null}
+      {facebookEventLink ? <p>RSVP on the <Link href={facebookEventLink}>Facebook event page</Link>.</p> : null}
     </div>
   )
 }

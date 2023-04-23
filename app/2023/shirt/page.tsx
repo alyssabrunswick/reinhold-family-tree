@@ -76,13 +76,13 @@ export default function Shirts() {
           <p>
             <label>Your Name: <input type="text" name="name" required /></label>
           </p>
-          <p>{`Please enter the quantity you'd like for each size`}</p>
+          <p>{`Please enter the quantity you'd like for each size:`}</p>
           <ul>
             {sizes?.map(({ label, value, price }) => (
               <li key={value}>
                 <label>
                   <span>{label}</span>
-                  <span>${price}</span>
+                  <span className={componentStyles.price}>${price}</span>
                   <input type="number" name={value} id={value} max={10} />
                 </label>
               </li>
@@ -100,6 +100,7 @@ export default function Shirts() {
       <ul style={{ padding: '0 5rem' }}>
         <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
         <li>Venmo | @alyssabrunswick</li>
+        <li>If would like to send check to Theresa Ramirez for payment that works too. You can contact her via email at <a href='mailto:theresa.m.ramirez@gmail.com'>theresa.m.ramirez@gmail.com</a> or text to <a href='+14027506333'>402-750-6333</a></li>
       </ul>
     </section>
   </main>

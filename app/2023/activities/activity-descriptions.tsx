@@ -20,9 +20,9 @@ export const saturday = [
   },
   {
     name: "Kayaking",
-    time: 'TBD',
+    time: '-',
     location: '',
-    description: 'Depending on the weather and river height, there are a few options for us to kayak in Norfolk or the surrounding area!',
+    description: `Unfortunately, we don't think the river will be high enough to kayak by this time. We're looking into other activities, but stay up to date on the Facebook page!`,
     facebookEventLink: undefined,
   }
 ]
@@ -33,7 +33,7 @@ export const saturdayEvening =
   time: '5pm',
   location: 'Bianca & Tyson\'s home - 312 S 12th St, Norfolk NE',
   description: `We'll be having an informal dinner Saturday evening for anyone interested. Food will be catered. Please join us for some fun and conversation!`,
-  facebookEventLink: undefined,
+  facebookEventLink: 'https://fb.me/e/1iNjsffi7',
 }
 
 export const sunday =
@@ -44,8 +44,8 @@ export const sunday =
   description: <>
     <p>{`Like the 84 years before this, please join us for the reunion! This year, however, instead of our usual fried chicken, we will be grilling! All we ask is that you bring a side dish or dessert to share.`}</p>
     <p>{`We have a couple of games planned and plenty of time for conversation.`}</p>
-    {/* <p>`For the master and amateur anglers, don't forget to bring your fishing poles!`}</p> */}
+    <p>{`For the master and amateur anglers, don't forget to bring your fishing poles!`}</p>
   </>,
-  facebookEventLink: undefined,
+  facebookEventLink: 'https://fb.me/e/7pWcQA64Y',
 }
 
