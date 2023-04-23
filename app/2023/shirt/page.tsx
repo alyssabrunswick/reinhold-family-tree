@@ -99,7 +99,7 @@ export default function Shirts() {
 
     <section className={`${styles.section} + ${styles.narrow}`}>
       <h3>Payment</h3>
-      <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Feel free to pay Alyssa via Paypal or Venmo, or contact one of us if you'd prefer another way!`}</p>
+      <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Please see the payment options below:`}</p>
       <ul style={{ padding: '0 5rem' }}>
         <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
         <li>Venmo | @alyssabrunswick</li>
