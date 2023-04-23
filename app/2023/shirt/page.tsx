@@ -1,5 +1,7 @@
 import styles from '../../page.module.scss'
 import componentStyles from '../../components/components.module.scss'
+import tshirtImage from '../../../public/images/tshirt.jpeg'
+import Image from 'next/image'
 
 export default function Shirts() {
 
@@ -62,6 +64,7 @@ export default function Shirts() {
       <h3>Order</h3>
       <div className={componentStyles.panel}>
 
+        <Image src={tshirtImage} alt='Reinhold family reunion picture' width='800' style={{ height: 'auto', maxWidth: '50vw', marginTop: '3vh'}} />
         <form name="shirts" method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
