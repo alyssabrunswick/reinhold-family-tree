@@ -4,39 +4,65 @@ import componentStyles from '../../components/components.module.scss'
 export default function Shirts() {
 
   const sizes = [{
+    label: "Youth Medium",
+    value: 'ym',
+    price: 10
+  }, {
+    label: "Youth Large",
+    value: 'yl',
+    price: 10
+  },  {
+    label: "Youth XL",
+    value: 'yxl',
+    price: 10
+  }, {
     label: "Extra Small",
-    value: 'xs'
+    value: 'xs',
+    price: 10
   }, {
     label: "Small",
-    value: 's'
+    value: 's',
+    price: 10
   }, {
     label: "Medium",
-    value: 'md'
+    value: 'md',
+    price: 10
   }, {
     label: "Large",
-    value: 'lg'
+    value: 'lg',
+    price: 10
   }, {
     label: "XL",
-    value: 'xl'
+    value: 'xl',
+    price: 10
   }, {
     label: "2XL",
-    value: 'xxl'
+    value: 'xxl',
+    price: 11
   }, {
     label: "3XL",
-    value: 'xxxl'
+    value: 'xxxl',
+    price: 11
+  }, {
+    label: "4XL",
+    value: 'xxxl',
+    price: 12
+  }, {
+    label: "5XL",
+    value: 'xxxl',
+    price: 12
   }]
-
 
   return <main className={styles.main}>
     <h1>T-shirts</h1>
     <p>{`This year we'll be ordering tshirts again if you're insterested!`}</p>
-    <p>{`The deadline to order is`} <b>TBD</b></p>
+    <p>{`The deadline to order is`} <b>May 12, 2023</b></p>
 
     <section className={styles.section}>
       <h3>Order</h3>
       <div className={componentStyles.panel}>
 
-        <form name="shirts" method="POST" 
+        <form name="shirts" method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           action="/success"
@@ -52,8 +78,14 @@ export default function Shirts() {
           </p>
           <p>{`Please enter the quantity you'd like for each size`}</p>
           <ul>
-            {sizes?.map(({ label, value }) => (
-              <li key={value}><label>{label}<input type="number" name={value} id={value} max={10} /></label></li>
+            {sizes?.map(({ label, value, price }) => (
+              <li key={value}>
+                <label>
+                  <span>{label}</span>
+                  <span>${price}</span>
+                  <input type="number" name={value} id={value} max={10} />
+                </label>
+              </li>
             ))}
           </ul>
           <button type="submit" style={{ cursor: 'pointer' }}>Submit</button>

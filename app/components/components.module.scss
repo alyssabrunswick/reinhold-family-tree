@@ -38,9 +38,10 @@
 
 .form ul label {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 1fr 2fr;
   grid-gap: 2rem;
   margin: .5rem;
+  max-width: 30vw;
 }
 
 .form input {
