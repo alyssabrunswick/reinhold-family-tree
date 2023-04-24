@@ -13,7 +13,7 @@ export default function Shirts() {
     label: "Youth Large",
     value: 'yl',
     price: 10
-  },  {
+  }, {
     label: "Youth XL",
     value: 'yxl',
     price: 10
@@ -63,8 +63,7 @@ export default function Shirts() {
     <section className={styles.section}>
       <h3>Order</h3>
       <div className={componentStyles.panel}>
-
-        <Image src={tshirtImage} alt='Reinhold family reunion picture' width='800' style={{ height: 'auto', maxWidth: '50vw', marginTop: '3vh'}} />
+        <Image src={tshirtImage} alt='Reinhold family reunion picture' width='800' style={{ height: 'auto', maxWidth: '35vw', marginTop: '3vh' }} />
         <form name="shirts" method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -94,17 +93,16 @@ export default function Shirts() {
           <button type="submit" style={{ cursor: 'pointer' }}>Submit</button>
         </form>
       </div>
-
     </section>
 
     <section className={`${styles.section} + ${styles.narrow}`}>
-      <h3>Payment</h3>
-      <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Please see the payment options below:`}</p>
-      <ul style={{ padding: '0 5rem' }}>
-        <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
-        <li>Venmo | @alyssabrunswick</li>
-        <li>If would like to send check to Theresa Ramirez for payment that works too. You can contact her via email at <a href='mailto:theresa.m.ramirez@gmail.com'>theresa.m.ramirez@gmail.com</a> or text to <a href='+14027506333'>402-750-6333</a></li>
-      </ul>
-    </section>
+        <h3>Payment</h3>
+        <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Please see the payment options below:`}</p>
+        <ul style={{ padding: '0 5rem' }}>
+          <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
+          <li>Venmo | @abrunswick</li>
+          <li>If would like to send check to Theresa Ramirez for payment that works too. You can contact her via email at <a href='mailto:theresa.m.ramirez@gmail.com'>theresa.m.ramirez@gmail.com</a> or text to <a href='+14027506333'>402-750-6333</a></li>
+        </ul>
+      </section>
   </main>
 }

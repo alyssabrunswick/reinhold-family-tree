@@ -40,7 +40,8 @@
     margin-top: 1rem;
 
     li:nth-child(odd) {
-      background-color: var(--lightest);
+      background-color: var(--secondary-rgb);
+      // color: var(--secondnary-rgb2);
     }
   }
 }
@@ -52,6 +53,10 @@
   grid-gap: 2rem;
   margin: .5rem;
   max-width: 30vw;
+
+  span {
+    color: var(--secondnary-rgb);
+  }
 }
 
 .form input {
