@@ -39,23 +39,39 @@
     flex-direction: column;
     margin-top: 1rem;
 
+    li:nth-child(even) {
+      background-color: var(--lightest);
+    }
+
     li:nth-child(odd) {
       background-color: var(--secondary-rgb);
-      // color: var(--secondnary-rgb2);
     }
   }
 }
 
-.form ul label {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 2fr .5fr 2fr;
-  grid-gap: 2rem;
-  margin: .5rem;
-  max-width: 30vw;
+.tshirt_image {
+  height: auto;
+  width: 100%;
+}
 
-  span {
-    color: var(--secondnary-rgb);
+.form ul {
+  label {
+    align-items: center;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr minmax(100px, 140px);
+    margin: 0.5rem .5rem .5rem 1rem;
+        
+    span {
+      color: var(--secondnary-rgb);
+    }
+  }
+}
+
+@media (min-width: 544px) {
+
+  .form ul label {
+    grid-template-columns: 2fr .5fr 2fr;
   }
 }
 

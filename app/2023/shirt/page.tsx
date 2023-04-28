@@ -63,7 +63,7 @@ export default function Shirts() {
     <section className={styles.section}>
       <h3>Order</h3>
       <div className={componentStyles.panel}>
-        <Image src={tshirtImage} alt='Reinhold family reunion picture' width='800' style={{ height: 'auto', maxWidth: '35vw', marginTop: '3vh' }} />
+        <Image src={tshirtImage} alt='Reinhold family reunion picture' width='800' className={componentStyles.tshirt_image} />
         <form name="shirts" method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
