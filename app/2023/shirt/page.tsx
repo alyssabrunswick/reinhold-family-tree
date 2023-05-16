@@ -57,52 +57,13 @@ export default function Shirts() {
 
   return <main className={styles.main}>
     <h1>T-shirts</h1>
-    <p>{`This year we'll be ordering tshirts again if you're insterested!`}</p>
-    <p>{`The deadline to order is`} <b>May 12, 2023</b></p>
+    <p>{`Shirts have already been ordered!`}</p>
 
     <section className={styles.section}>
       <h3>Order</h3>
       <div className={componentStyles.panel}>
         <Image src={tshirtImage} alt='Reinhold family reunion picture' width='800' className={componentStyles.tshirt_image} />
-        <form name="shirts" method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="/success"
-          className={componentStyles.form}>
-          <input type="hidden" name="form-name" value="shirts" />
-          <p className="hidden" hidden>
-            <label>
-              {`Do not fill this out if you are human:`} <input name="bot-field" />
-            </label>
-          </p>
-          <p>
-            <label>Your Name: <input type="text" name="name" required /></label>
-          </p>
-          <p>{`Please enter the quantity you'd like for each size:`}</p>
-          <ul>
-            {sizes?.map(({ label, value, price }) => (
-              <li key={value}>
-                <label>
-                  <span>{label}</span>
-                  <span className={componentStyles.price}>${price}</span>
-                  <input type="number" name={value} id={value} max={10} />
-                </label>
-              </li>
-            ))}
-          </ul>
-          <button type="submit" style={{ cursor: 'pointer' }}>Submit</button>
-        </form>
       </div>
     </section>
-
-    <section className={`${styles.section} + ${styles.narrow}`}>
-        <h3>Payment</h3>
-        <p className={componentStyles.panel}>{`We'll only place orders for shirts that are paid for. Please see the payment options below:`}</p>
-        <ul style={{ padding: '0 5rem' }}>
-          <li><a href='paypal.me/AlyssaBrunswick' target='_blank' rel='noreferrer'>paypal.me/AlyssaBrunswick</a></li>
-          <li>Venmo | @abrunswick</li>
-          <li>If would like to send check to Theresa Ramirez for payment that works too. You can contact her via email at <a href='mailto:theresa.m.ramirez@gmail.com'>theresa.m.ramirez@gmail.com</a> or text to <a href='+14027506333'>402-750-6333</a></li>
-        </ul>
-      </section>
   </main>
 }
